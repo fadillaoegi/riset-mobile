@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UTS-Mobile-Dasar</string>
+    <string name="judul">UTS-Mobile-Dasar</string>
+    <string name="nama">M Fadil Muhtarom Laoegi</string>
+    <string name="email">fadilfdl2710@gmail.com</string>
+    <string name="nim">19410100076</string>
+    <string name="story">Saya Fadil Mahasiswa Universitas Dinamika Surabaya, Hobi saya Ngoding, nonton anime, badminton, dan main alat musik. Saya Lulusan SMA N 1 Wawotobi, Sulawesi Tenggara</string>
+    <string name="tentang_saya">About me</string>
+    <string name="game">Game</string>
+    <string name="ket_game">Permainan Batu,Gunting, Kertas</string>
+    <string name="pilihan">Pilih Untuk Bermain</string>
+</resources>

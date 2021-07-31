@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">focus_intent</string>
+    <string name="judul">Kisah Roro Jonggrang</string>
+    <string name="cerita">Dahulu kala, di Desa Prambanan, ada sebuah kerajaan yang dipimpin oleh Prabu Baka. la memiliki seorang putri yang sangat cantik bernama Roro Jongrang.
+
+Suatu ketika, Prambanan dikalahkan oleh Kerajaan Pengging yang dipimpin oleh Bandung Bondowoso. Prabu Baka tewas di medan perang. Dia terbunuh oleh Bandung Bondowoso yang sangatb sakti.
+
+Bandung Bondowoso kemudian menempati Istana Prambanan. Melihat putri dari Prabu Baka yang cantik jelita yaitu Roro Jongrang, timbul keinginannya untuk memperistri Roro Jongrang.
+
+Roro Jonggrang tahu bahwa Bandung Bondowoso adalah orang yang membunuh ayahnya. Karena itu, ia mencari akal untuk menolaknya. Lalu, ia mengajukan syarat dibuatkan 1.000 buah candi dan dua buah sumur yang dalam. Semuanya harus selesai dalam semalam.Bandung Bondowoso menyanggupi persyaratan Roro Jonggrang. Ia meminta pertolongan kepada ayahnya dan mengerahkan balatentara roh-roh halus untuk membantunya pada hari yang ditentukan. Pukul empat pagi, hanya tinggal lima buah candi yang belum selesai dan kedua sumur hampir selesai.</string>
+    <string name="cerita2">Mengetahui 1.000 candi telah hampir selesai, Roro Jonggrang ketakutan.“Apa yang harus kulakukan untuk menghentikannya?” pikirnya cemas membayangkan ia harus menerima pinangan Bandung Bondowoso yang telah membunuh orangtuanya. Akhirnya, ia pergi membangunkan gadis-gadis di Desa Prambanan dan memerintahkan untuk menghidupkan obor-obor dan membakar jerami, memukulkan alu pada lesung, dan menaburkan bunga-bunga yang harum. Suasana saat itu menjadi terang dan riuh. Semburat merah memancar di langit dengan seketika.Ayam jantan pun berkokok bersahut-sahutan. Mendengar suara itu, para roh halus segera meninggalkan pekerjaan. Mereka menyangka hari telah pagi dan matahari akan segera terbit. Pada saat itu hanya tinggal satu sebuah candi yang belum dibuat.Bandung Bondowoso sangat terkejut dan marah menyadari usahanya telah gagal. Dalam amarahnya, Bandung Bondowoso mengutuk Roro Jonggrang menjadi sebuah arca untuk melengkapi sebuah buah candi yang belum selesai.
+
+Batu arca Roro Jonggrang diletakkan di dalam ruang candi yang besar. Hingga kini, candi tersebut disebut dengan Candi Roro Jonggrang. Sementara itu, candi-candi di sekitarnya disebut dengan Candi Sewu (Candi Seribu) meskipun jumlahnya belum mencapai 1.000.</string>
+
+    <string name="cerita3"></string>
+    <string name="title_activity_klik3">klik3</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

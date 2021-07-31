@@ -1,0 +1,2 @@
+rootProject.name = "focus_intent"
+include ':app'

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">19410100076_M-Fadil_Muhtarom_Laoegi</string>
+    <string name="nama">Nama</string>
+    <string name="nim">Nim</string>
+    <string name="matkul">Mata kuliah</string>
+    <string name="uts">Uts</string>
+    <string name="uas">Uas</string>
+    <string name="hitung">Hitung</string>
+    <string name="hasil">Hasil</string>
+    <string name="tugas">Tugas</string>
+</resources>
