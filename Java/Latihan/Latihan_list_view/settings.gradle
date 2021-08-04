@@ -1,0 +1,2 @@
+rootProject.name = "Latihan_list_view"
+include ':app'
