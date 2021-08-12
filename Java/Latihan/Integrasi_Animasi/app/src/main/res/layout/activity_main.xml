@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#2d3436"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:id="@+id/animasi"
+        app:lottie_fileName="coronavirus.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    // Tag Animasi Lootie Json
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/animation_view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+    //Cara Panggil File Json Animasi
+<!--        app:lottie_rawRes="@raw/hello_world"-->
+<!--    // or-->
+<!--    app:lottie_fileName="hello_world.json"-->
+
+    //Looping anamasi
+<!--    // Loop indefinitely-->
+<!--    app:lottie_loop="true"-->
+<!--    // Start playing as soon as the animation is loaded-->
+<!--    app:lottie_autoPlay="true" />-->
+
+</LinearLayout>
