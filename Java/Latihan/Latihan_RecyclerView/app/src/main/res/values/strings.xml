@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">RecyclierView</string>
+    <item name="array_nama" type="string">
+
+        <string nama=""></string>
+
+    </item>
 </resources>
