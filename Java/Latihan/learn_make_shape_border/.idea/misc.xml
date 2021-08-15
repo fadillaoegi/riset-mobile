@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/android/Java/Latihan/learn_make_shape_border/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Android/android/Java/Latihan/learn_make_shape_border/app/src/main/res/drawable/border_button.xml" value="0.2222222222222222" />
+        <entry key="..\:/Android/android/Java/Latihan/learn_make_shape_border/app/src/main/res/drawable/border_field.xml" value="0.2222222222222222" />
+        <entry key="..\:/Android/android/Java/Latihan/learn_make_shape_border/app/src/main/res/layout/activity_main.xml" value="0.2" />
       </map>
     </option>
   </component>
