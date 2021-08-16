@@ -1,8 +1,34 @@
 <resources>
     <string name="app_name">RecyclierView</string>
-    <item name="array_nama" type="string">
 
-        <string nama=""></string>
+    <string-array name="filedName">
 
-    </item>
+        <item>C++</item>
+        <item>PHP</item>
+        <item>Pyton</item>
+        <item>Kotlin</item>
+        <item>Java</item>
+        <item>Swift</item>
+        <item>Ruby</item>
+        <item>Golang</item>
+        <item>Dart</item>
+        <item>Java Script</item>
+
+    </string-array>
+
+    <string-array name="desc">
+
+        <item>Bla Bla Bla Bla Bla</item>
+        <item>Bla Bla Bla Bla Bla</item>
+        <item>Bla Bla Bla Bla Bla</item>
+        <item>Bla Bla Bla Bla Bla</item>
+        <item>Bla Bla Bla Bla Bla</item>
+        <item>Bla Bla Bla Bla Bla</item>
+        <item>Bla Bla Bla Bla Bla</item>
+        <item>Bla Bla Bla Bla Bla</item>
+        <item>Bla Bla Bla Bla Bla</item>
+        <item>Bla Bla Bla Bla Bla</item>
+
+    </string-array>
+
 </resources>
