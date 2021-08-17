@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2d3436"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_first"
+        android:layout_margin="10dp"
+        android:layout_width="290dp"
+        android:layout_height="70dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:textColor="#fd79a8"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Cilick Fisrt cardView"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_second"
+        android:layout_margin="10dp"
+        android:layout_width="290dp"
+        android:layout_height="70dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:textColor="#fd79a8"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Click Second cardView"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
