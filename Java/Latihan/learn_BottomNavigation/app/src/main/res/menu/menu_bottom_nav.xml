@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mhome"
+        android:title="home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/mprofile"
+        android:title="profile"
+        android:icon="@drawable/ic_baseline_person_24"/>
+
+    <item
+        android:id="@+id/msearch"
+        android:title="search"
+        android:icon="@drawable/ic_baseline_search_24"/>
+
+    <item
+        android:id="@+id/mjadwal"
+        android:title="jadwal"
+        android:icon="@drawable/ic_baseline_schedule_24"/>
+
+</menu>
