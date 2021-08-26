@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.projectundikamobile.learn_bottomnavigation.Fragmen.fragmenHome;
@@ -13,16 +14,60 @@ import com.projectundikamobile.learn_bottomnavigation.Fragmen.fragmenProfile;
 import com.projectundikamobile.learn_bottomnavigation.Fragmen.fragmenSchedule;
 import com.projectundikamobile.learn_bottomnavigation.Fragmen.fragmenSearch;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
+    Fragment fragment = null;
     BottomNavigationView bottomNavigationView;
-    private BottomNavigationView.OnNavigationItemSelectedListener navigation = new BottomNavigationView.OnNavigationItemSelectedListener() {
-        @Override
-        public boolean onNavigationItemSelected(MenuItem item) {
 
-            Fragment fragment = null;
+    private long backPressedTime;
+    private String id;
+    private int test;
 
-            switch (item.getItemId()) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        findViews();
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
+        if (savedInstanceState != null) {
+            fragment = getSupportFragmentManager().getFragment(savedInstanceState, "tes");
+            loadFragment(fragment);
+        }
+
+        loadFragment(new fragmenHome());
+
+
+    }
+
+    public void findViews() {
+
+        // Set Up Bottom Navigation
+        bottomNavigationView = (BottomNavigationView) findViewById(R.id.bnav);
+
+
+
+    }
+
+    public boolean loadFragment(Fragment fragment) {
+
+        if (fragment != null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.mainBotNav, fragment)
+                    .commit();
+
+            return true;
+        }
+
+        return false;
+
+    }
+
+
+    public boolean onNavigationItemSelected(MenuItem item) {
+
+
+        switch (item.getItemId()) {
                 case R.id.mhome:
                     fragment = new fragmenHome();
                     break;
@@ -36,40 +81,19 @@ public class MainActivity extends AppCompatActivity {
                     fragment = new fragmenSchedule();
                     break;
             }
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.mainBotNav, fragment).commit();
 
-            return true;
+            return loadFragment(fragment);
 
         }
 
-    };
-
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public void onBackPressed() {
+        if (backPressedTime + 2000 > System.currentTimeMillis()){
+            super.onBackPressed();
+        }else {
+            Toast.makeText(this, "Tekan 2 kali untuk keluar", Toast.LENGTH_SHORT).show();
+        }
 
-        findViews();
-
-
-    }
-
-    public void initViews() {
-
-    }
-
-    public void findViews() {
-
-        // Set Up Bottom Navigation
-        bottomNavigationView = (BottomNavigationView) findViewById(R.id.bnav);
-        bottomNavigationView.setOnNavigationItemSelectedListener(navigation);
-
-
-    }
-
-    public void listenerViews() {
-
+        backPressedTime = System.currentTimeMillis();
     }
 }
