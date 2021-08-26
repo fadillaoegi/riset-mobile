@@ -33,19 +33,25 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         findViews();
 
-//        Kalau pake Function Load
-//        if (savedInstanceState != null) {
-//            fragment = getSupportFragmentManager().getFragment(savedInstanceState, "tes");
-//            loadFragment(fragment);
-//        }
-//
-//        loadFragment(new fragmenHome());
+        //cara 1 menampilkan First layout
+        if (savedInstanceState != null) {
+            fragment = getSupportFragmentManager().getFragment(savedInstanceState, "Nav");
+            loadFragment(fragment);
+        }
 
+        loadFragment(new fragmenHome());
+
+        //        cara 1 menampilkan First layout
+        //firstLayoutNav();
+
+
+    }
+
+    public void firstLayoutNav() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.mainBotNav, new fragmenHome());
         fragmentTransaction.commit();
-
     }
 
     public void findViews() {
@@ -90,7 +96,15 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     break;
             }
 
+            // Jika Pake fnction loadfragmen
             return loadFragment(fragment);
+
+//        getSupportFragmentManager().beginTransaction()
+//                .replace(R.id.mainBotNav, fragment)
+//                .commit();
+//            return false;
+
+
 
         }
 
