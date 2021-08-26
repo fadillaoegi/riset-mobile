@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.cv_second:
 
-                intent = new Intent(this, cardView.class);
+                intent = new Intent(this, cobak.class);
                 startActivity(intent);
                 break;
 

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Learn_cardView">
         <activity
+            android:name=".cobak"
+            android:exported="true" />
+        <activity
             android:name=".tes"
             android:exported="true" />
         <activity

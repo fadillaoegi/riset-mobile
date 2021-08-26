@@ -3,6 +3,8 @@ package com.projectundikamobile.learn_bottomnavigation;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -16,9 +18,10 @@ import com.projectundikamobile.learn_bottomnavigation.Fragmen.fragmenSearch;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
-    Fragment fragment = null;
-    BottomNavigationView bottomNavigationView;
-
+    private Fragment fragment = null;
+    private BottomNavigationView bottomNavigationView;
+    private FragmentManager fragmentManager;
+    private FragmentTransaction fragmentTransaction;
     private long backPressedTime;
     private String id;
     private int test;
@@ -29,14 +32,19 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         setContentView(R.layout.activity_main);
 
         findViews();
-        bottomNavigationView.setOnNavigationItemSelectedListener(this);
-        if (savedInstanceState != null) {
-            fragment = getSupportFragmentManager().getFragment(savedInstanceState, "tes");
-            loadFragment(fragment);
-        }
 
-        loadFragment(new fragmenHome());
+//        Kalau pake Function Load
+//        if (savedInstanceState != null) {
+//            fragment = getSupportFragmentManager().getFragment(savedInstanceState, "tes");
+//            loadFragment(fragment);
+//        }
+//
+//        loadFragment(new fragmenHome());
 
+        fragmentManager = getSupportFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.mainBotNav, new fragmenHome());
+        fragmentTransaction.commit();
 
     }
 
@@ -44,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         // Set Up Bottom Navigation
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bnav);
-
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
 
 
     }
