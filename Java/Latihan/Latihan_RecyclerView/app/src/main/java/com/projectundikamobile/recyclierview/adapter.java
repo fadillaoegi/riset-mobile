@@ -45,6 +45,9 @@ public class adapter extends RecyclerView.Adapter<adapter.devAdapterHolder> {
         return (aLDev != null) ? aLDev.size() : 0;
     }
 
+    public interface AdapterListenesr {
+    }
+
     public class devAdapterHolder extends RecyclerView.ViewHolder {
 
         private TextView dev, lang, desc;

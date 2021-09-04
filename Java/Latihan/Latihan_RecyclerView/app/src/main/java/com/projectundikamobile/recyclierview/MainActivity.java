@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements adapter.AdapterListenesr {
 
     protected adapter adapter;
     protected RecyclerView rv;
@@ -52,5 +52,7 @@ public class MainActivity extends AppCompatActivity {
         aLDev.add(new getSet("Luxman", "Figma", "Disigner"));
 
     }
+
+
 
 }
