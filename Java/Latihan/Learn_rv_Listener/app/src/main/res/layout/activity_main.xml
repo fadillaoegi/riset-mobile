@@ -9,6 +9,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
     <TextView
         android:textSize="20dp"
         android:text="Rv Listener"
@@ -30,15 +31,24 @@
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvVertikal"
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvVertikal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
     </ScrollView>
 <!--  EndRv Vertikal  -->
 
 <!--  Rv Horizontal  -->
-    <ScrollView
+    <HorizontalScrollView
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -55,7 +65,7 @@
 
         </LinearLayout>
 
-    </ScrollView>
+    </HorizontalScrollView>
 <!--  EndRv Horizontal  -->
 
 
