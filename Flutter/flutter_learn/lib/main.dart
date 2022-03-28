@@ -8,7 +8,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Testing Flutter :)",
-      home: RandomWord(),
+      home: Scaffold(appBar: 
+      AppBar(
+        title: Text("heyy")
+        ),
+        body: Center(
+          child: Text("testing"),
+        ),
+      ),
     );
   }
 }
