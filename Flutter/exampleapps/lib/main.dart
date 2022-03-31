@@ -9,11 +9,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Testing Flutter :)",
       home: Scaffold(
-        appBar: AppBar(title: Text("heyy")),
-        body: Center(
-          child: Text("testing!!"),
-        ),
-      ),
+          appBar: AppBar(title: Text("heyy, Mr.Morning Star !!wkowkok")),
+          body: Container(
+              color: Colors.pink,
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("Anak Muda Indonesia"),
+                      Text("Wow, Hello Mr.Morning Star!!!")
+                    ],
+                     
+                  ),
+                 
+                ],
+              ))),
     );
   }
 }
