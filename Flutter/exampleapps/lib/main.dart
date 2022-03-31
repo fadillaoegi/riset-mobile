@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
           appBar: AppBar(title: Text("heyy, Mr.Morning Star !!wkowkok")),
           body: Container(
-              color: Colors.pink,
+              // color: Colors.pink,
               child: Column(
                 children: [
                   Row(
@@ -19,9 +19,23 @@ class MyApp extends StatelessWidget {
                       Text("Anak Muda Indonesia"),
                       Text("Wow, Hello Mr.Morning Star!!!")
                     ],
-                     
                   ),
-                 
+                  Row(
+                    children: [
+                      Card(
+
+                        color: Colors.pink,
+                        child: Row(
+                          children: [
+                            Icon(Icons.star_border_outlined)
+                          ],
+                        )
+                      ),
+                      Card(
+                        child: Text("Haiii"),
+                      )
+                    ],
+                  )
                 ],
               ))),
     );
