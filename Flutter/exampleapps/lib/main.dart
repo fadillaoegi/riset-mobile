@@ -76,6 +76,8 @@ class MyApp extends StatelessWidget {
         )
     );
 
+  //========================
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -96,6 +98,7 @@ class MyApp extends StatelessWidget {
                   Container(
                     child: Column(
                       children: [
+                        //Row Text
                         Row(
                           mainAxisAlignment: (MainAxisAlignment.center),
                           children: [
@@ -107,11 +110,17 @@ class MyApp extends StatelessWidget {
                             )
                           ],
                         ),
+
+                        //Row Card
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             _card1,
-                            _card2
+                            _card2,
+                            // _image
+                            Container(
+                              child: Image.asset("assets/image/we.png"),
+                            )
 
                           ],
                         )
@@ -119,7 +128,11 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   button1,
-                  button2
+                  button2,
+
+                  Container(
+
+                  )
                 ],
               ))),
     );
