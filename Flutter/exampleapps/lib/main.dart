@@ -7,6 +7,7 @@ class MyApp extends StatelessWidget {
 
   var colorPink = Colors.pinkAccent;
   var colorGreenStabilo = Colors.lightGreenAccent;
+  var bTest = "ButtomTest";
 
   @override
   Widget build(BuildContext context) {
@@ -65,8 +66,20 @@ class MyApp extends StatelessWidget {
                   ),
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 50.0),
-                    color: colorPink,
-                    child: Text("test"),
+                    // color: colorPink,
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        backgroundColor: colorPink,
+                      ),
+                         onPressed: () {},
+                      child: Text(
+                        bTest,
+                        style: TextStyle(
+                          color: Colors.white70,
+
+                        ),
+                      )
+                    )
                   )
                 ],
               ))),
