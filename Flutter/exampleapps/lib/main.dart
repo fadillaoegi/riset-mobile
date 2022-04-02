@@ -7,7 +7,74 @@ class MyApp extends StatelessWidget {
 
   var colorPink = Colors.pinkAccent;
   var colorGreenStabilo = Colors.lightGreenAccent;
-  var bTest = "ButtomTest";
+
+
+  //Button
+  var button1 = Container(
+        width: 200,
+        height: 45,
+        margin: EdgeInsets.symmetric(vertical: 50.0),
+        child: TextButton(
+            style: TextButton.styleFrom(
+              backgroundColor: Colors.pinkAccent,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20)
+              ),
+            ),
+            onPressed: () {},
+            child: Text(
+              "Button Testing",
+              style: TextStyle(
+                color: Colors.white70,
+
+              ),
+            )
+        )
+    );
+  var button2 = Container(
+      width: 200,
+      height: 45,
+      child: TextButton(
+        style: TextButton.styleFrom(
+          backgroundColor: Color(0xffF18265),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+        ),
+        onPressed: () {},
+        child: Text(
+          "Let's take a picture",
+          style: TextStyle(
+            color: Color(0xffffffff),
+          ),
+        ),
+      ),
+    );
+
+  //========================
+
+  //Card
+  var _card1 = Card(
+      //Margin
+        margin: EdgeInsets.symmetric(horizontal: 20.0),
+        color: Colors.pink,
+        child: Row(
+          children: [
+            Icon(Icons.star_border_outlined)
+          ],
+        )
+    );
+
+  var _card2 = Card(
+        margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
+        color: Colors.lightGreenAccent,
+        child: Row(
+          children: [
+            Icon(Icons.star_border_purple500),
+
+          ],
+        )
+    );
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +82,11 @@ class MyApp extends StatelessWidget {
       title: "Testing Flutter :)",
       home: Scaffold(
           appBar: AppBar(
-              title: Text("heyy, Mr.Morning Star !!wkowkok"),
+              title: Text("Tetsing Success !!!"),
             backgroundColor: Colors.pinkAccent,
           ),
-          body: Container(
+          body:
+          Container(
             // margin: EdgeInsets.symmetric(vertical: 50.0),
               padding: EdgeInsets.symmetric(vertical: 50.0),
               // color: Colors.pink,
@@ -29,63 +97,35 @@ class MyApp extends StatelessWidget {
                     child: Column(
                       children: [
                         Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-
+                          mainAxisAlignment: (MainAxisAlignment.center),
                           children: [
-                            Text("Anak Muda Indonesia"),
-                            Text("Wow, Hello Mr.Morning Star!!!")
+                            Column(
+                              children: [
+                                Text("Anak Muda Indonesia"),
+                                Text("Wow, Hello Mr.Morning Star!!!")
+                              ],
+                            )
                           ],
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Card(
-                              //Margin
-                                margin: EdgeInsets.symmetric(horizontal: 20.0),
-                                color: Colors.pink,
-                                child: Row(
-                                  children: [
-                                    Icon(Icons.star_border_outlined)
-                                  ],
-                                )
-                            ),
-                            Card(
-                                margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
-                                color: colorGreenStabilo,
-                                child: Row(
-                                  children: [
-                                    Icon(Icons.star_border_purple500),
+                            _card1,
+                            _card2
 
-                                  ],
-                                )
-                            )
                           ],
                         )
                       ],
                     ),
                   ),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 50.0),
-                    // color: colorPink,
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: colorPink,
-                      ),
-                         onPressed: () {},
-                      child: Text(
-                        bTest,
-                        style: TextStyle(
-                          color: Colors.white70,
-
-                        ),
-                      )
-                    )
-                  )
+                  button1,
+                  button2
                 ],
               ))),
     );
   }
 }
+
 
 class RandomWord extends StatefulWidget {
   @override
