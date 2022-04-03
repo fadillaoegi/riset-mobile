@@ -67,6 +67,15 @@ class MyApp extends StatelessWidget {
 
   //========================
 
+  var _image = Container(
+      child: Image.asset(
+    "assets/image/we.png",
+    height: 200,
+    width: 200,
+  ));
+
+  //========================
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -109,13 +118,7 @@ class MyApp extends StatelessWidget {
                   ),
                   button1,
                   button2,
-                  Container(
-                    child: Image.asset(
-                      "assets/image/we.png",
-                      height: 200,
-                      width: 200,
-                      ),
-                  )
+                  _image
                 ],
               ))),
     );
