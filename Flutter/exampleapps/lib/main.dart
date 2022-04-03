@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
+import 'colors.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  var colorPink = Colors.pinkAccent;
-  var colorGreenStabilo = Colors.lightGreenAccent;
-
   //Button
   var button1 = Container(
       width: 200,
@@ -88,7 +85,9 @@ class MyApp extends StatelessWidget {
           body: SafeArea(
               child: Container(
                   // margin: EdgeInsets.symmetric(vertical: 50.0),
-                  padding: EdgeInsets.symmetric(vertical: 50.0),
+                  // padding: EdgeInsets.symmetric(vertical: 50.0),
+                  padding: EdgeInsets.only(
+                      top: 50.0, bottom: 50.0, right: 0.0, left: 0.0),
                   // color: Colors.pink,
                   color: Colors.black12,
                   child: Column(
@@ -102,8 +101,16 @@ class MyApp extends StatelessWidget {
                               children: [
                                 Column(
                                   children: [
-                                    Text("Anak Muda Indonesia"),
-                                    Text("Woww, Hello Mr.Morning Star!!!")
+                                    Text(
+                                      "Anak Muda Indonesia",
+                                      style: TextStyle(
+                                          color: Color.fromRGBO(25, 42, 86, 1),
+                                          fontSize: 20.0),
+                                    ),
+                                    Text(
+                                      "Woww, Hello Mr.Morning Star!!!",
+                                      style: TextStyle(fontSize: 20.0),
+                                    )
                                   ],
                                 )
                               ],
@@ -119,40 +126,10 @@ class MyApp extends StatelessWidget {
                       ),
                       button1,
                       button2,
-                      _image
+                      _image,
+                      // _navy
                     ],
                   )))),
     );
-  }
-}
-
-class RandomWord extends StatefulWidget {
-  @override
-  _RandomWordState createState() => _RandomWordState();
-}
-
-class _RandomWordState extends State<RandomWord> {
-  String randomword = WordPair.random().asString;
-
-  void _changeWord() {
-    setState(() {
-      randomword = WordPair.random().asString;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return Scaffold(
-        appBar: AppBar(
-          title: Text('Hello, Mr.Morning Star !!'),
-        ),
-        body: Center(
-          child: Text(randomword),
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: _changeWord,
-          child: Icon(Icons.play_arrow),
-        ));
   }
 }
