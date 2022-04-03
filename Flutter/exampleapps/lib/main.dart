@@ -85,42 +85,43 @@ class MyApp extends StatelessWidget {
             title: Text("Tetsing Success !!!"),
             backgroundColor: Colors.pinkAccent,
           ),
-          body: Container(
-              // margin: EdgeInsets.symmetric(vertical: 50.0),
-              padding: EdgeInsets.symmetric(vertical: 50.0),
-              // color: Colors.pink,
-              color: Colors.black12,
-              child: Column(
-                children: [
-                  Container(
-                    child: Column(
-                      children: [
-                        //Row Text
-                        Row(
-                          mainAxisAlignment: (MainAxisAlignment.center),
+          body: SafeArea(
+              child: Container(
+                  // margin: EdgeInsets.symmetric(vertical: 50.0),
+                  padding: EdgeInsets.symmetric(vertical: 50.0),
+                  // color: Colors.pink,
+                  color: Colors.black12,
+                  child: Column(
+                    children: [
+                      Container(
+                        child: Column(
                           children: [
-                            Column(
+                            //Row Text
+                            Row(
+                              mainAxisAlignment: (MainAxisAlignment.center),
                               children: [
-                                Text("Anak Muda Indonesia"),
-                                Text("Wow, Hello Mr.Morning Star!!!")
+                                Column(
+                                  children: [
+                                    Text("Anak Muda Indonesia"),
+                                    Text("Woww, Hello Mr.Morning Star!!!")
+                                  ],
+                                )
                               ],
+                            ),
+
+                            //Row Card
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [_card1, _card2],
                             )
                           ],
                         ),
-
-                        //Row Card
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [_card1, _card2],
-                        )
-                      ],
-                    ),
-                  ),
-                  button1,
-                  button2,
-                  _image
-                ],
-              ))),
+                      ),
+                      button1,
+                      button2,
+                      _image
+                    ],
+                  )))),
     );
   }
 }
