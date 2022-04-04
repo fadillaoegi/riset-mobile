@@ -1,10 +1,6 @@
-import 'dart:ffi';
-
-import 'package:exampleapps/material/fontStyle.dart';
 import 'package:flutter/material.dart';
 import 'material/colors.dart';
 import 'material/component.dart';
-import 'material/fontStyle.dart';
 
 void main() => runApp(MyApp());
 

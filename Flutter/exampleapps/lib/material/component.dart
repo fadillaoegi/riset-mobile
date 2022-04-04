@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'colors.dart';
 
+TextStyle styleFont1 = TextStyle(fontSize: 20, color: putih);
+TextStyle styleFont2 = TextStyle(fontSize: 20, color: black);
+
 //Button
 var button1 = Container(
     width: 200,
@@ -13,12 +16,7 @@ var button1 = Container(
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         ),
         onPressed: () {},
-        child: Text(
-          "Button Testing",
-          style: TextStyle(
-            color: Colors.white70,
-          ),
-        )));
+        child: Text("Button Testing", style: styleFont1)));
 
 var button2 = Container(
   width: 200,
@@ -33,9 +31,7 @@ var button2 = Container(
     onPressed: () {},
     child: Text(
       "Let's take a picture",
-      style: TextStyle(
-        color: Color(0xffffffff),
-      ),
+      style: styleFont1,
     ),
   ),
 );
