@@ -1,50 +1,13 @@
 import 'package:flutter/material.dart';
-import 'colors.dart';
+import 'material/colors.dart';
+import 'material/component.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  //Button
-  var button1 = Container(
-      width: 200,
-      height: 45,
-      margin: EdgeInsets.symmetric(vertical: 50.0),
-      child: TextButton(
-          style: TextButton.styleFrom(
-            backgroundColor: Colors.pinkAccent,
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-          ),
-          onPressed: () {},
-          child: Text(
-            "Button Testing",
-            style: TextStyle(
-              color: Colors.white70,
-            ),
-          )));
-  var button2 = Container(
-    width: 200,
-    height: 45,
-    child: TextButton(
-      style: TextButton.styleFrom(
-        backgroundColor: Color(0xffF18265),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-        ),
-      ),
-      onPressed: () {},
-      child: Text(
-        "Let's take a picture",
-        style: TextStyle(
-          color: Color(0xffffffff),
-        ),
-      ),
-    ),
-  );
-
   //========================
 
-  //Card
+//Card
   var _card1 = Card(
       //Margin
       margin: EdgeInsets.symmetric(horizontal: 20.0),
@@ -62,7 +25,7 @@ class MyApp extends StatelessWidget {
         ],
       ));
 
-  //========================
+//========================
 
   var _image = Container(
       child: Image.asset(
@@ -72,16 +35,14 @@ class MyApp extends StatelessWidget {
   ));
 
   //========================
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Testing Flutter :)",
       home: Scaffold(
           appBar: AppBar(
-            title: Text("Tetsing Success !!!"),
-            backgroundColor: Colors.pinkAccent,
-          ),
+              title: Text("Tetsing Success !!!"),
+              backgroundColor: Colors.pinkAccent),
           body: SafeArea(
               child: Container(
                   // margin: EdgeInsets.symmetric(vertical: 50.0),
@@ -104,8 +65,7 @@ class MyApp extends StatelessWidget {
                                     Text(
                                       "Anak Muda Indonesia",
                                       style: TextStyle(
-                                          color: Color.fromRGBO(25, 42, 86, 1),
-                                          fontSize: 20.0),
+                                          color: picoVoid, fontSize: 20.0),
                                     ),
                                     Text(
                                       "Woww, Hello Mr.Morning Star!!!",
