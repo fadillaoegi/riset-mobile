@@ -1,12 +1,15 @@
+import 'dart:ffi';
+
+import 'package:exampleapps/material/fontStyle.dart';
 import 'package:flutter/material.dart';
 import 'material/colors.dart';
 import 'material/component.dart';
+import 'material/fontStyle.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  //========================
-
+  //======================== Variable
 //Card
   var _card1 = Card(
       //Margin
@@ -34,7 +37,10 @@ class MyApp extends StatelessWidget {
     width: 200,
   ));
 
-  //========================
+  //======================== Void
+
+  void _click() {}
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -50,7 +56,7 @@ class MyApp extends StatelessWidget {
                   padding: EdgeInsets.only(
                       top: 50.0, bottom: 50.0, right: 0.0, left: 0.0),
                   // color: Colors.pink,
-                  color: Colors.black12,
+                  color: picoVoid,
                   child: Column(
                     children: [
                       Container(
@@ -64,13 +70,10 @@ class MyApp extends StatelessWidget {
                                   children: [
                                     Text(
                                       "Anak Muda Indonesia",
-                                      style: TextStyle(
-                                          color: picoVoid, fontSize: 20.0),
+                                      style: styleFont1,
                                     ),
-                                    Text(
-                                      "Woww, Hello Mr.Morning Star!!!",
-                                      style: TextStyle(fontSize: 20.0),
-                                    )
+                                    Text("Woww, Hello Mr.Morning Star!!!",
+                                        style: styleFont1),
                                   ],
                                 )
                               ],
