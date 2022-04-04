@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   //======================== Variable
 //Card
   var _card1 = Card(
-      //Margin
+      //Margin\
       margin: EdgeInsets.symmetric(horizontal: 20.0),
       color: Colors.pink,
       child: Row(
@@ -34,8 +34,6 @@ class MyApp extends StatelessWidget {
   ));
 
   //======================== Void
-
-  void _click() {}
 
   @override
   Widget build(BuildContext context) {
@@ -86,6 +84,7 @@ class MyApp extends StatelessWidget {
                       button1,
                       button2,
                       _image,
+
                       // _navy
                     ],
                   )))),

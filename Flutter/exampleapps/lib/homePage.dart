@@ -7,13 +7,19 @@ class homePage extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
-      title: "Home Page",
       home: Scaffold(
-        appBar: AppBar(title: Text("Home Pages")),
+        appBar: AppBar(
+          title: Text("Home Page"),
+        ),
         body: SafeArea(
             child: Container(
-          color: Colors.black12,
-          child: Column(),
+          child: Column(
+            children: [
+              Row(
+                
+              )
+            ],
+          ),
         )),
       ),
     );
