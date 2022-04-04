@@ -12,7 +12,7 @@ class homePage extends StatelessWidget {
         appBar: AppBar(title: Text("Home Pages")),
         body: SafeArea(
             child: Container(
-          color: Colors.black12,
+          color: Colors.grey,
           child: Column(),
         )),
       ),
