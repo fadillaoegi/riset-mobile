@@ -3,6 +3,57 @@ import 'package:flutter/material.dart';
 void main() => runApp(homePage());
 
 class homePage extends StatelessWidget {
+  var _icon1 = Column(
+    children: [
+      Icon(
+        Icons.call,
+        color: Colors.green[900],
+        size: 30,
+      ),
+      SizedBox(
+        height: 10,
+      ),
+      Text(
+        "CALL",
+        style: TextStyle(color: Colors.green[900], fontWeight: FontWeight.bold),
+      )
+    ],
+  );
+
+  var _icon2 = Column(
+    children: [
+      Icon(
+        Icons.near_me,
+        color: Colors.green[900],
+        size: 30,
+      ),
+      SizedBox(
+        height: 10,
+      ),
+      Text(
+        "ROUTE",
+        style: TextStyle(color: Colors.green[900], fontWeight: FontWeight.bold),
+      )
+    ],
+  );
+
+  var _icon3 = Column(
+    children: [
+      Icon(
+        Icons.share,
+        color: Colors.green[900],
+        size: 30,
+      ),
+      SizedBox(
+        height: 10,
+      ),
+      Text(
+        "SHARE",
+        style: TextStyle(color: Colors.green[900], fontWeight: FontWeight.bold),
+      )
+    ],
+  );
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -45,6 +96,7 @@ class homePage extends StatelessWidget {
                         ],
                       ),
                       Row(
+                        // crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Icon(
                             Icons.favorite,
@@ -61,62 +113,7 @@ class homePage extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   // crossAxisAlignment: CrossAxisAlignment.be,
-                  children: [
-                    Column(
-                      children: [
-                        Icon(
-                          Icons.call,
-                          color: Colors.green[900],
-                          size: 30,
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Text(
-                          "CALL",
-                          style: TextStyle(
-                              color: Colors.green[900],
-                              fontWeight: FontWeight.bold),
-                        )
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        Icon(
-                          Icons.near_me,
-                          color: Colors.green[900],
-                          size: 30,
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Text(
-                          "ROUTE",
-                          style: TextStyle(
-                              color: Colors.green[900],
-                              fontWeight: FontWeight.bold),
-                        )
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        Icon(
-                          Icons.share,
-                          color: Colors.green[900],
-                          size: 30,
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Text(
-                          "SHARE",
-                          style: TextStyle(
-                              color: Colors.green[900],
-                              fontWeight: FontWeight.bold),
-                        )
-                      ],
-                    )
-                  ],
+                  children: [_icon1, _icon2, _icon3],
                 ),
               ),
               SizedBox(height: 30),
