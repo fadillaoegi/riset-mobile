@@ -3,12 +3,10 @@ import 'style.dart';
 import '../pages/Chatting.dart';
 
 class ChatTile extends StatelessWidget {
-  final String image;
-  final String name;
-  final String message;
-  final String time;
-
-  // ChatTile({this.image, this.name, this.message, this.time});
+  final image;
+  final name;
+  final message;
+  final time;
 
   ChatTile({this.image, this.name, this.message, this.time});
 

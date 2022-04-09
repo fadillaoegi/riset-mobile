@@ -1,7 +1,6 @@
 import 'package:examplechatting/widgets/style.dart';
 import 'package:examplechatting/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import '../widgets/widgets.dart';
 
 class Chatting extends StatelessWidget {
   @override
