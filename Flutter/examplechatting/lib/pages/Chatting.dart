@@ -1,7 +1,7 @@
-import 'dart:ffi';
-
 import 'package:examplechatting/widgets/style.dart';
+import 'package:examplechatting/widgets/widgets.dart';
 import 'package:flutter/material.dart';
+import '../widgets/widgets.dart';
 
 class Chatting extends StatelessWidget {
   @override
@@ -46,33 +46,11 @@ class Chatting extends StatelessWidget {
                     style: title,
                   ),
                   sizeBox3,
-                  Row(
-                    children: [
-                      Image.asset(
-                        "assets/image/pic1.png",
-                        height: 60,
-                        width: 60,
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Niki-chan",
-                            style: title,
-                          ),
-                          Text(
-                            "Heyy, Luffy-kun .......",
-                            style: subTitle,
-                          )
-                        ],
-                      ),
-                      Spacer(),
-                      Text(
-                        "Now",
-                        style: subTitle,
-                      )
-                    ],
-                  )
+                  ChatTile(
+                      image: 'assets/image/pic1.png',
+                      name: 'Nikki-Chan',
+                      message: 'Heyy, Luffy-kun ....',
+                      time: 'Now'),
                 ],
               ),
             )

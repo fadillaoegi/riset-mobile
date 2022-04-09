@@ -27,3 +27,7 @@ var sizeBox3 = SizedBox(
 var sizeBox4 = SizedBox(
   height: 12.0,
 );
+
+var sizeBoxW1 = SizedBox(
+  width: 12.0,
+);
