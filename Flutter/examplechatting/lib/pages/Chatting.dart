@@ -9,14 +9,15 @@ class Chatting extends StatelessWidget {
           child: ListView(
         children: [
           Text(
-            "Hello Mr.Morning Start !!",
+            "Hello Mr.Morning Start !!!",
             style: TextStyle(fontSize: 40),
           ),
           Row(children: [
             new Icon(
               Icons.abc_outlined,
               size: 100,
-            )
+            ),
+            Image.asset('assets/image/profilePic.png')
           ])
         ],
       )),
