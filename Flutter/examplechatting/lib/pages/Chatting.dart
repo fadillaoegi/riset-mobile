@@ -7,7 +7,16 @@ class Chatting extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(
+          Icons.add,
+          size: 30.0,
+        ),
+        backgroundColor: sweetPink,
+      ),
       backgroundColor: sweetPink,
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       body: SafeArea(
           child: Center(
               child: SingleChildScrollView(
@@ -55,25 +64,31 @@ class Chatting extends StatelessWidget {
                               image: 'assets/image/pic1.png',
                               name: 'Nikki-Chan',
                               message: 'Heyy, Luffy-kun ....',
-                              time: 'Now'),
+                              time: 'Now',
+                              unread: false),
                           sizeBox3,
                           ChatTile(
                               image: 'assets/image/pic2.png',
                               name: 'Nikki-Chan',
                               message: 'Heyy, Luffy-kun ....',
-                              time: '11.00'),
+                              time: '11.00',
+                              unread: false),
                           sizeBox3,
                           ChatTile(
-                              image: 'assets/image/pic3.png',
-                              name: 'Nikki-Chan',
-                              message: 'Heyy, Luffy-kun ....',
-                              time: '12.30'),
+                            image: 'assets/image/pic3.png',
+                            name: 'Nikki-Chan',
+                            message: 'Heyy, Luffy-kun ....',
+                            time: '12.30',
+                            unread: true,
+                          ),
                           sizeBox3,
                           ChatTile(
-                              image: 'assets/image/pic1.png',
-                              name: 'Nikki-Chan',
-                              message: 'Heyy, Luffy-kun ....',
-                              time: '10.45'),
+                            image: 'assets/image/pic1.png',
+                            name: 'Nikki-Chan',
+                            message: 'Heyy, Luffy-kun ....',
+                            time: '10.45',
+                            unread: true,
+                          ),
                         ],
                       ),
                     ),

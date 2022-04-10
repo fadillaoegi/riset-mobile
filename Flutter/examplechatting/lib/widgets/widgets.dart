@@ -3,12 +3,13 @@ import 'style.dart';
 import '../pages/Chatting.dart';
 
 class ChatTile extends StatelessWidget {
-  final image;
+  var image;
   final name;
   final message;
   final time;
+  final unread;
 
-  ChatTile({this.image, this.name, this.message, this.time});
+  ChatTile({this.image, this.name, this.message, this.time, this.unread});
 
   @override
   Widget build(BuildContext context) {
