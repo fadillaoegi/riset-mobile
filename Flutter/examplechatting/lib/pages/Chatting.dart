@@ -10,6 +10,7 @@ class Chatting extends StatelessWidget {
       backgroundColor: sweetPink,
       body: SafeArea(
           child: Center(
+              child: SingleChildScrollView(
         child: Column(
           children: [
             sizeBox1,
@@ -36,26 +37,81 @@ class Chatting extends StatelessWidget {
                 color: lynxWhite,
                 borderRadius: BorderRadius.vertical(top: Radius.circular(80)),
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  sizeBox2,
-                  Text(
-                    "Friends",
-                    style: title,
-                  ),
-                  sizeBox3,
-                  ChatTile(
-                      image: 'assets/image/pic1.png',
-                      name: 'Nikki-Chan',
-                      message: 'Heyy, Luffy-kun ....',
-                      time: 'Now'),
-                ],
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    sizeBox2,
+                    Text(
+                      "Friends",
+                      style: title,
+                    ),
+                    sizeBox3,
+                    Container(
+                      height: 200,
+                      child: ListView(
+                        children: [
+                          ChatTile(
+                              image: 'assets/image/pic1.png',
+                              name: 'Nikki-Chan',
+                              message: 'Heyy, Luffy-kun ....',
+                              time: 'Now'),
+                          sizeBox3,
+                          ChatTile(
+                              image: 'assets/image/pic2.png',
+                              name: 'Nikki-Chan',
+                              message: 'Heyy, Luffy-kun ....',
+                              time: '11.00'),
+                          sizeBox3,
+                          ChatTile(
+                              image: 'assets/image/pic3.png',
+                              name: 'Nikki-Chan',
+                              message: 'Heyy, Luffy-kun ....',
+                              time: '12.30'),
+                          sizeBox3,
+                          ChatTile(
+                              image: 'assets/image/pic1.png',
+                              name: 'Nikki-Chan',
+                              message: 'Heyy, Luffy-kun ....',
+                              time: '10.45'),
+                        ],
+                      ),
+                    ),
+                    sizeBox2,
+                    Text(
+                      "Groups",
+                      style: title,
+                    ),
+                    ChatTile(
+                        image: 'assets/image/pic1.png',
+                        name: 'Nikki-Chan',
+                        message: 'Heyy, Luffy-kun ....',
+                        time: 'Now'),
+                    sizeBox3,
+                    ChatTile(
+                        image: 'assets/image/pic2.png',
+                        name: 'Nikki-Chan',
+                        message: 'Heyy, Luffy-kun ....',
+                        time: 'Now'),
+                    sizeBox3,
+                    ChatTile(
+                        image: 'assets/image/pic3.png',
+                        name: 'Nikki-Chan',
+                        message: 'Heyy, Luffy-kun ....',
+                        time: 'Now'),
+                    sizeBox3,
+                    ChatTile(
+                        image: 'assets/image/pic1.png',
+                        name: 'Nikki-Chan',
+                        message: 'Heyy, Luffy-kun ....',
+                        time: 'Now'),
+                  ],
+                ),
               ),
             )
           ],
         ),
-      )),
+      ))),
     );
   }
 }
