@@ -6,8 +6,9 @@ class example extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff474141),
       appBar: AppBar(
-        title: Text("data", style: GoogleFonts.poppins()),
+        title: Text("Testing Layouting !", style: GoogleFonts.poppins()),
       ),
       body: SafeArea(
         // child: Center(
@@ -20,6 +21,13 @@ class example extends StatelessWidget {
                 SizedBox(
                   height: 60,
                 ),
+                Text(
+                  "Profile Menu",
+                  style: TextStyle(color: Colors.white, fontSize: 24),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -31,7 +39,18 @@ class example extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 80,
+                  height: 10.0,
+                ),
+                Text(
+                  "Anak Muda Indonesia",
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
+                Text(
+                  "Profile Menu",
+                  style: TextStyle(color: Colors.grey, fontSize: 18),
+                ),
+                SizedBox(
+                  height: 60,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -74,7 +93,23 @@ class example extends StatelessWidget {
                         height: 100,
                         width: 100,
                       ),
-                    ])
+                    ]),
+                SizedBox(
+                  height: 20.0,
+                ),
+                Container(
+                  height: 55,
+                  width: 224,
+                  child: RaisedButton(
+                    onPressed: () {},
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20)),
+                    child: Text(
+                      "Update Profile",
+                      style: TextStyle(fontWeight: FontWeight.w300),
+                    ),
+                  ),
+                )
               ]),
         ),
       ),
