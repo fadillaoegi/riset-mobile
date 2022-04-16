@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../style/theme.dart';
+import '../style/style.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class example extends StatelessWidget {
@@ -8,7 +8,7 @@ class example extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xff474141),
       appBar: AppBar(
-        title: Text("Testing Layouting !", style: GoogleFonts.poppins()),
+        title: Text("Testing Layouting !", style: font1),
       ),
       body: SafeArea(
         // child: Center(
@@ -18,9 +18,7 @@ class example extends StatelessWidget {
               // crossAxisAlignment: CrossAxisAlignment.center,
               // mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(
-                  height: 60,
-                ),
+                sizeBox1,
                 Text(
                   "Profile Menu",
                   style: TextStyle(color: Colors.white, fontSize: 24),
@@ -49,54 +47,48 @@ class example extends StatelessWidget {
                   "Profile Menu",
                   style: TextStyle(color: Colors.grey, fontSize: 18),
                 ),
-                SizedBox(
-                  height: 60,
-                ),
+                sizeBox2,
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Image.asset(
                       "assets/images/item2.png",
-                      height: 100,
-                      width: 100,
+                      height: 70,
+                      width: 70,
                     ),
                     Image.asset(
                       "assets/images/item2.png",
-                      height: 100,
-                      width: 100,
+                      height: 70,
+                      width: 70,
                     ),
                     Image.asset(
                       "assets/images/item2.png",
-                      height: 100,
-                      width: 100,
+                      height: 70,
+                      width: 70,
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: 40,
-                ),
+                sizeBox2,
                 Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Image.asset(
                         "assets/images/item2.png",
-                        height: 100,
-                        width: 100,
+                        height: 70,
+                        width: 70,
                       ),
                       Image.asset(
                         "assets/images/item2.png",
-                        height: 100,
-                        width: 100,
+                        height: 70,
+                        width: 70,
                       ),
                       Image.asset(
                         "assets/images/item2.png",
-                        height: 100,
-                        width: 100,
+                        height: 70,
+                        width: 70,
                       ),
                     ]),
-                SizedBox(
-                  height: 20.0,
-                ),
+                sizeBox2,
                 Container(
                   height: 55,
                   width: 224,
